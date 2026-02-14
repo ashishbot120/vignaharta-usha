@@ -44,7 +44,7 @@ export default function Hero({ content }) {
 
           {/* RIGHT PANEL OVERLAY */}
           <div className="absolute  right-0 z-30 w-[92%] sm:w-[500px] lg:w-[750px]">
-            <div className="bg-white/95 backdrop-blur rounded-2xl shadow-xl border p-19 ">
+            <div className="bg-white/95 backdrop-blur rounded-2xl shadow-xl border p-20 ">
               {/* Logo + Title */}
               <div className="text-center">
                 <div className="flex justify-center mb-3">
