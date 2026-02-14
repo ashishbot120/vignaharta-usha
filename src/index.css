@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .perspective-\[1200px\] {
+    perspective: 1200px;
+  }
+
+  /* Optional: very subtle entrance for new center card */
+  .card-enter {
+    animation: cardPopIn 0.6s ease-out;
+  }
+}
+
+@keyframes cardPopIn {
+  0% {
+    transform: scale(0.75) translateZ(-80px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1) translateZ(40px);
+    opacity: 1;
+  }
+}
