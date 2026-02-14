@@ -25,6 +25,23 @@ Frontend for **Vignaharta Usha**, a full-stack real estate website built with **
 
 ---
 
+PROJECT STRUCURE:
+client/
+src/
+components/
+pages/
+routes/
+services/ # API calls (axios/fetch)
+context/ # Auth / global state
+assets/
+App.jsx
+main.jsx
+public/
+index.html
+vite.config.js
+tailwind.config.js
+package.json
+
 ## ⚙️ Setup & Run Locally
 
 bash
