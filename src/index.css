@@ -8,9 +8,7 @@ html, body {
 }
 html {
   scroll-behavior: smooth;
-}@tailwind base;
-@tailwind components;
-@tailwind utilities;
+}
 
 @layer utilities {
   .perspective-\[1200px\] {

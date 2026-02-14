@@ -23,17 +23,18 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4 sm:p-6">
       <form
         onSubmit={handleLogin}
-        className="w-full max-w-sm bg-white rounded-xl shadow p-6"
+        className="w-full max-w-sm bg-white rounded-2xl shadow p-5 sm:p-6 border"
       >
         <h1 className="text-xl font-bold">Admin Login</h1>
+        <p className="text-xs text-gray-500 mt-1">Use admin credentials to manage content.</p>
 
         <div className="mt-4">
           <label className="text-sm">Email</label>
           <input
-            className="mt-1 w-full border rounded-lg p-2"
+            className="mt-1 w-full border rounded-lg p-2 outline-none focus:ring-2 focus:ring-black/20"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -42,7 +43,7 @@ export default function AdminLogin() {
         <div className="mt-3">
           <label className="text-sm">Password</label>
           <input
-            className="mt-1 w-full border rounded-lg p-2"
+            className="mt-1 w-full border rounded-lg p-2 outline-none focus:ring-2 focus:ring-black/20"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -51,8 +52,16 @@ export default function AdminLogin() {
 
         {error && <div className="mt-3 text-red-600 text-sm">{error}</div>}
 
-        <button className="mt-5 w-full bg-black text-white rounded-lg py-2">
+        <button className="mt-5 w-full bg-black text-white rounded-lg py-2 font-semibold active:scale-[0.99]">
           Login
+        </button>
+
+        <button
+          type="button"
+          onClick={() => navigate("/")}
+          className="mt-3 w-full border rounded-lg py-2 font-semibold hover:bg-gray-50"
+        >
+          Back to Website
         </button>
       </form>
     </div>
