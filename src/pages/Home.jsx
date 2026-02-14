@@ -35,16 +35,6 @@ export default function Home() {
       <FloorPlans content={content} />
       <DeveloperAndUpdates content={content} />
       <FAQ content={content} />
-
-      {/* Optional footer anchor for navbar "Contact" */}
-      <section id="contact" className="bg-[#f4fbf8] py-20 scroll-mt-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-serif font-bold text-[#193630]">Contact</h2>
-          <p className="mt-3 text-gray-700">
-            Phone / Email / Address section (you can connect your footer content here).
-          </p>
-        </div>
-      </section>
     </div>
   );
 }
